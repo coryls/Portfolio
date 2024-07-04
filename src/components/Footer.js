@@ -10,7 +10,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Soto Hernandez</h3>
+          <h3>Designed and Developed by Cory Stagg</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} SH</h3>
@@ -19,7 +19,7 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/sotohndz"
+                href="https://github.com/coryls"
                 style={{color: "white"}}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -29,7 +29,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/soto-hernandez00"
+                href="https://www.linkedin.com/in/cory-hernandez00"
                 style={{color: "white"}}
                 target="_blank"
                 rel="noopener noreferrer"

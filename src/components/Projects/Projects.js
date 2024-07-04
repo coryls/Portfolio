@@ -1,13 +1,82 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import {Container, Row, Col} from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import Aeler from "../../Assets/Projects/aeler.png";
+import Alufire from "../../Assets/Projects/alufire.png";
+import Lemonade from "../../Assets/Projects/lemonade.png";
+import Oomnitza from "../../Assets/Projects/oomnitza.png";
+import Propertysimple from "../../Assets/Projects/propertysimple.png";
+import Thinknum from "../../Assets/Projects/thinknum.png";
+import Recess from "../../Assets/Projects/recess.png";
+import Unore from "../../Assets/Projects/unore.png";
+import Zilculator from "../../Assets/Projects/zilculator.png";
+
+const projects = [
+  {
+    image: Aeler,
+    title: "AELER",
+    link: "https://www.aeler.com",
+    description:
+      "Aeler provides an advanced smart container solution for shipping, offering increased payload, native insulation, full visibility, enhanced security, and sustainability to streamline and secure global logistics.",
+  },
+  {
+    image: Alufire,
+    title: "ALUFIRE",
+    link: "https://www.alufire.com",
+    description:
+      "Alufire specializes in designing and manufacturing high-quality fire-resistant systems, including partitions, doors, and technical windows, providing enhanced safety and protection in architectural projects.",
+  },
+  {
+    image: Lemonade,
+    title: "Lemonade",
+    link: "https://www.lemonade.com",
+    description:
+      "Lemonade is a modern insurance company that uses technology and artificial intelligence to offer affordable and user-friendly home, renters, pet, and life insurance, with a focus on transparency and social good.",
+  },
+  {
+    image: Oomnitza,
+    title: "Oomnitza",
+    link: "https://www.oomnitza.com/",
+    description:
+      "Oomnitza provides an Enterprise Technology Management solution that helps IT organizations manage and automate their technology assets and workflows, improving efficiency, compliance, and visibility across the entire IT lifecycle.",
+  },
+  {
+    image: Propertysimple,
+    title: "PROPERTYSIMPLE",
+    link: "https://www.propertysimple.com",
+    description:
+      "PropertySimple uses AI to automate real estate marketing and lead follow-up, helping agents manage social media, email, and text campaigns efficiently.",
+  },
+  {
+    image: Thinknum,
+    title: "Thinknum",
+    link: "https://www.thinknum.com",
+    description:
+      "Thinknum aggregates alternative data from online sources to provide business insights, enabling users to track company performance and market trends.",
+  },
+  {
+    image: Recess,
+    title: "Recess",
+    link: "https://takearecess.co",
+    description:
+      "Recess offers CBD-infused beverages designed to promote relaxation, mental clarity, and balance.",
+  },
+  {
+    image: Unore,
+    title: "Unore",
+    link: "https://unore.io",
+    description:
+      "Unore provides a decentralized financial platform for secure digital asset management, including trading and staking.",
+  },
+  {
+    image: Zilculator,
+    title: "Zilculator",
+    link: "https://www.zilculator.com",
+    description:
+      "Zilculator offers detailed property analysis for real estate investors, providing comprehensive financial and market data for informed decision-making.",
+  },
+];
 
 function Projects() {
   return (
@@ -17,76 +86,21 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{color: "white"}}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+        <Row style={{justifyContent: "center", paddingBottom: "10px"}}>
+          {projects.map(({image, title, description, link}) => (
+            <Col key={title} md={6} className="project-card">
+              <ProjectCard
+                imgPath={image}
+                isBlog={false}
+                title={title}
+                description={description}
+                link={link}
+              />
+            </Col>
+          ))}
         </Row>
       </Container>
     </Container>

@@ -2,7 +2,7 @@ import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {AiFillGithub, AiOutlineTwitter, AiFillInstagram} from "react-icons/ai";
+import {AiFillGithub} from "react-icons/ai";
 import {FaLinkedinIn} from "react-icons/fa";
 
 function Home2() {
@@ -15,7 +15,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Soto is a{" "}
+              Cory is a{" "}
               <i>
                 <b className="purple">Full-stack engineer</b>
               </i>{" "}
@@ -42,7 +42,7 @@ function Home2() {
                 <b className="purple">frameworks</b>
               </i>
               . <br />
-              Soto is also a competitive programmer who actively participates in
+              Cory is also a competitive programmer who actively participates in
               different online challenges. He loves learning about anything,
               especially if it makes him better at his craft.
             </p>
@@ -62,7 +62,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/sotohndz"
+                  href="https://github.com/coryls"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -72,32 +72,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/sotohernandez821"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soto-hernandez-b02247281/"
+                  href="https://www.linkedin.com/in/cory-stagg-b02247281/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/sotohernandez821"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
                 </a>
               </li>
             </ul>
